@@ -217,11 +217,13 @@ input::-webkit-inner-spin-button {
   left: 20px;
   bottom: 30px;
   outline: 2px solid #f9bdc0;
-  -webkit-outline-offset: 1px;
+  outline-offset: 1px;
   transition: outline-offset 0.2s ease-in-out;
 }
 
 .squre1-text {
+  position: relative;
+  top: 15px;
   text-align: center;
   font-size: 50px;
   color: #15b5b0;
