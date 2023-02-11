@@ -1,0 +1,515 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Luckiest Guy", cursive;
+}
+
+.main {
+  height: 100vh;
+  background-color: #15b5b0;
+}
+
+.game-heading {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  width: 250px;
+  height: 50px;
+  background-color: #f5f2f348;
+  border-radius: 50px;
+  font-size: 24px;
+}
+
+.game-heading::before {
+  position: absolute;
+  content: "";
+  z-index: 1;
+  left: 10px;
+  width: 250px;
+  height: 50px;
+  background-color: #f5f2f348;
+  border-radius: 50px;
+  font-size: 24px;
+}
+
+.content-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* all-circle */
+.all-circle {
+  position: relative;
+  display: flex;
+  width: 50%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+/* outer-circle */
+.back-circle {
+  position: absolute;
+  z-index: 1;
+  background-color: #f9bdc0;
+  height: 480px;
+  width: 480px;
+  border-radius: 50%;
+  bottom: x;
+  border: 4px solid #fda8ac;
+}
+
+.inner-circle {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 100px;
+  background-color: #fbe698;
+  height: 370px;
+  width: 370px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.new {
+  left: 300px;
+  transition: left 0.6s ease-in-out;
+}
+
+.font-circle {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  background-color: #f9bdc0;
+  height: 450px;
+  width: 450px;
+  border-radius: 50%;
+}
+
+.gif-img {
+  position: absolute;
+  top: 179px;
+}
+
+.font-c-text {
+  position: relative;
+  bottom: 50px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.guess-number {
+  font-size: 80px;
+}
+
+.lock-div {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  right: 20px;
+}
+
+.inner-circle-small-circle {
+  height: 12px;
+  width: 12px;
+  background-color: #15b5b0;
+  border-radius: 50px;
+}
+
+.small-circle1 {
+  transition: all 0.1s ease-in-out;
+  animation: twinkle 1.1s ease-in-out infinite;
+}
+
+.small-circle2 {
+  transition: all 0.1s ease-in-out;
+  animation: twinkle 2s ease-in-out infinite;
+}
+
+@keyframes twinkle {
+  0% {
+    height: 12px;
+    width: 12px;
+  }
+  50% {
+    height: 6px;
+    width: 6px;
+  }
+}
+
+.lockClose {
+  display: block;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+/* squre */
+.squre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+  width: 350px;
+  background-color: #fbe698;
+  border-radius: 20px;
+  box-shadow: #f9bdc0 15px 19px, #f9bdc0 15px 15px;
+}
+
+.squre1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 10px;
+}
+
+.range {
+  position: relative;
+  text-align: center;
+  top: 20px;
+  height: 50px;
+  width: 300px;
+  border-radius: 10px;
+  background-color: #d7dadadd;
+  outline: none;
+  border: none;
+  font-size: 30px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.range:focus {
+  border: 2px solid #15b5b0;
+}
+
+.rangeValue {
+  text-align: center;
+  font-size: 40px;
+  color: #15b5b0;
+}
+
+.start {
+  position: absolute;
+  font-size: 30px;
+  font-family: "Caveat", cursive;
+  padding: 5px 25px;
+  border-radius: 50px;
+  background-color: #f9bdc0;
+  color: #15b5b0;
+  border: none;
+  left: 20px;
+  bottom: 30px;
+  outline: 2px solid #f9bdc0;
+  outline-offset: 1px;
+  transition: outline-offset 0.2s ease-in-out;
+}
+
+.squre1-text {
+  text-align: center;
+  font-size: 50px;
+  color: #15b5b0;
+}
+
+.squre2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 30px;
+  width: 50%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-content-holder {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100vh;
+}
+
+.text-content-2 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.squre2-text {
+  position: absolute;
+  font-size: 34px;
+  color: #15b5b0;
+  top: 20px;
+  left: 20px;
+}
+
+.input-value {
+  position: absolute;
+  left: 20px;
+  text-align: center;
+  font-size: 30px;
+  outline: none;
+  width: 250px;
+  height: 60px;
+  background-color: #f9bdc0;
+  border: none;
+  border-radius: 10px;
+}
+
+.input-value:focus {
+  border: 2px solid #15b5b0;
+}
+
+.sub-btn {
+  position: absolute;
+  font-size: 30px;
+  font-family: "Caveat", cursive;
+  padding: 5px 25px;
+  border-radius: 50px;
+  background-color: #15b5b0;
+  color: #f9bdc0;
+  border: none;
+  left: 20px;
+  bottom: 20px;
+  outline: 2px solid #15b5b0;
+  outline-offset: 1px;
+  transition: outline-offset 0.2s ease-in-out;
+}
+
+.sub-btn:hover,
+.start:hover {
+  outline-offset: 4px;
+}
+
+.game-over-squre {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  height: 250px;
+  width: 350px;
+  background-color: #fbe698;
+  border-radius: 20px;
+  box-shadow: #f9bdc0 15px 19px, #f9bdc0 15px 15px;
+}
+
+.game-over-restart-squre {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  height: 200px;
+  width: 350px;
+  background-color: #fbe698;
+  border-radius: 20px;
+  box-shadow: #f9bdc0 15px 19px, #f9bdc0 15px 15px;
+}
+
+.game-over-inner-content {
+  position: relative;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.icon1,
+.icon2,
+.icon3 {
+  font-size: 40px;
+  color: #15b5b0;
+}
+
+.rank {
+  font-size: 60px;
+}
+
+.attempt {
+  font-size: 80px;
+}
+
+@media only screen and (max-width: 1332px) {
+  .all-circle {
+    margin-top: 100px;
+    left: -50px;
+  }
+  .content-section {
+    flex-direction: column;
+  }
+  .all-circle {
+    top: 120px;
+    left: -50px;
+    width: 50%;
+    height: 40vh;
+  }
+  .back-circle {
+    height: 350px;
+    width: 350px;
+  }
+  .inner-circle {
+    height: 250px;
+    width: 250px;
+  }
+  .font-circle {
+    height: 350px;
+    width: 350px;
+  }
+  .text-content {
+    flex-direction: row;
+    width: 100%;
+    background-color: #15b5b0;
+  }
+  .new {
+    left: 200px;
+  }
+  .guess-number {
+    font-size: 60px;
+  }
+  .lockClose {
+    font-size: 30px;
+  }
+
+  .font-c-text {
+    font-size: 20px;
+  }
+  .text-content-holder {
+    margin-top: 300px;
+    width: 100%;
+    height: 50vh;
+  }
+  .text-content-2 {
+    display: flex;
+    background-color: #15b5b0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .gif-img {
+    height: 200px;
+  }
+  .game-over-squre {
+    gap: 40px;
+    height: 250px;
+    width: 350px;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .all-circle {
+    margin-top: 20px;
+  }
+
+  .back-circle,
+  .font-circle {
+    height: 250px;
+    width: 250px;
+  }
+
+  .inner-circle {
+    height: 150px;
+    width: 150px;
+  }
+
+  .text-content {
+    margin-top: 20px;
+    flex-direction: column;
+    width: 100%;
+    background-color: #15b5b0;
+  }
+  .game-over-squre,
+  .game-over-restart-squre {
+    height: 220px;
+    width: 300px;
+  }
+  .squre {
+    height: 220px;
+    width: 300px;
+    background-color: #fbe698;
+    border-radius: 20px;
+    box-shadow: #f9bdc0 15px 19px, #f9bdc0 15px 15px;
+  }
+  .squre1-text {
+    position: relative;
+
+    font-size: 30px;
+  }
+  .squre2-text {
+    position: absolute;
+    font-size: 24px;
+    color: #15b5b0;
+    top: 20px;
+    left: 20px;
+  }
+
+  .range {
+    width: 250px;
+  }
+
+  .rangeValue {
+    font-size: 30px;
+  }
+  .new {
+    left: 150px;
+  }
+  .guess-number {
+    font-size: 40px;
+  }
+  .game-over-squre {
+    height: 200px;
+    width: 250px;
+  }
+  .game-over-restart-squre {
+    height: 200px;
+    width: 250px;
+  }
+  .rank {
+    font-size: 50px;
+  }
+  .attempt {
+    font-size: 70px;
+  }
+  .gif-img {
+    top: 60px;
+  }
+}
+
+@media only screen and (max-width: 359px) {
+  .back-circle,
+  .font-circle {
+    height: 200px;
+    width: 200px;
+  }
+
+  .inner-circle {
+    height: 120px;
+    width: 120px;
+  }
+}
